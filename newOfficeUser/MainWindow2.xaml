@@ -1,0 +1,32 @@
+﻿<Window x:Class="NewOfficeUser.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NewOfficeUser"
+        mc:Ignorable="d"
+        Title="Create New Office User v2.0" Height="355" Width="406" Background="#FF424242" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" ResizeMode="CanMinimize">
+    <Grid Margin="0,0,0,-6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="149*"/>
+            <ColumnDefinition Width="651*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="First Name:" HorizontalAlignment="Left" Height="27" Margin="0,31,0,0" VerticalAlignment="Top" Width="122" Foreground="#FFDEDEDE" Cursor="IBeam" Grid.Column="1" FontSize="12.5"/>
+        <Label Content="Last Name:" HorizontalAlignment="Left" Height="27" Margin="0,66,0,0" VerticalAlignment="Top" Width="122" Foreground="#FFDEDEDE" Cursor="IBeam" Grid.Column="1" FontSize="12.5"/>
+        <Label Content="Job Title:" HorizontalAlignment="Left" Height="27" Margin="0,100,0,0" VerticalAlignment="Top" Width="122" Foreground="#FFDEDEDE" Cursor="IBeam" Grid.Column="1" FontSize="12.5"/>
+        <Label Content="Department:" HorizontalAlignment="Left" Height="27" Margin="0,133,0,0" VerticalAlignment="Top" Width="122" Foreground="#FFDEDEDE" Cursor="IBeam" Grid.Column="1" FontSize="12.5"/>
+        <Label Content="Manager Username:" HorizontalAlignment="Left" Height="27" Margin="0,167,0,0" VerticalAlignment="Top" Width="122" Foreground="#FFDEDEDE" Cursor="IBeam" Grid.Column="1" FontSize="12.5"/>
+        <Label Content="Phone Number:" HorizontalAlignment="Left" Height="27" Margin="0,199,0,0" VerticalAlignment="Top" Width="122" Foreground="#FFDEDEDE" Cursor="IBeam" Grid.Column="1" FontSize="12.5"/>
+
+        <TextBox x:Name="first" HorizontalAlignment="Left" Margin="126,36,0,0" TextWrapping="WrapWithOverflow" Text="" VerticalAlignment="Top" Width="120" Background="#FF272727" Foreground="#FFDEDEDE" Cursor="IBeam" Grid.Column="1"/>
+        <TextBox x:Name="last" HorizontalAlignment="Left" Margin="127,71,0,0" TextWrapping="WrapWithOverflow" Text="" VerticalAlignment="Top" Width="120" Background="#FF272727" Foreground="#FFDEDEDE" Cursor="IBeam" Grid.Column="1"/>
+        <TextBox x:Name="jobtitle" HorizontalAlignment="Left" Margin="127,105,0,0" TextWrapping="WrapWithOverflow" Text="" VerticalAlignment="Top" Width="120" Background="#FF272727" Foreground="#FFDEDEDE" Cursor="IBeam" Grid.Column="1"/>
+        <TextBox x:Name="department" HorizontalAlignment="Left" Margin="127,138,0,0" TextWrapping="WrapWithOverflow" Text="" VerticalAlignment="Top" Width="120" Background="#FF272727" Foreground="#FFDEDEDE" Cursor="IBeam" Grid.Column="1"/>
+        <TextBox x:Name="manager" HorizontalAlignment="Left" Margin="127,172,0,0" TextWrapping="WrapWithOverflow" Text="" VerticalAlignment="Top" Width="120" Background="#FF272727" Foreground="#FFDEDEDE" Cursor="IBeam" Grid.Column="1"/>
+        <TextBox x:Name="phonenumber" HorizontalAlignment="Left" Margin="127,204,0,0" TextWrapping="WrapWithOverflow" Text="" VerticalAlignment="Top" Width="120" Background="#FF272727" Foreground="#FFDEDEDE" Cursor="IBeam" Grid.Column="1"/>
+
+        <Button x:Name="btnCreate" Grid.Column="1" Content="Create User" HorizontalAlignment="Left" Margin="10,246,0,0" VerticalAlignment="Top" Background="#FFD5D5D5" Foreground="#FF353535" FontSize="14" BorderBrush="#FF4E4E4E"/>
+        <TextBox x:Name="status" Grid.Column="1" HorizontalAlignment="Left" Margin="126,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121" Height="23" Focusable="False" Background="#FFFBFBFB" Foreground="#FF202020" IsReadOnly="True" FontSize="16" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
